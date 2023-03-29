@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+    <form>
+      <input type="text" id="description-input" placeholder="Description...">
+      <input type="number" id="amount-input" placeholder="Amount...">
+      <select id="category-select">
+        <option value="">Select category...</option>
+        <option value="food">Food</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="transportation">Transportation</option>
+        <option value="housing">Housing</option>
+        <option value="utilities">Utilities</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Add Expense</button>
+    </form>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="expense-table-body"></tbody>
+      
+    </table>
+    
+    <!-- <tfoot id="total-expenses">ewfadsf</tfoot> -->
+    <script src="main.js"></script>
+  </body>
+</html>
